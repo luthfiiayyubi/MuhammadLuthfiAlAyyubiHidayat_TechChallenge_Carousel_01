@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- judul halaman di tab browser-->
+    <title>Daily Quotes</title>
+    <!-- menghubungkan file css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- judul utama web -->
+    <h1>Daily Quotes</h1>
+    <!-- tombol navigasi dan carousel dijadiin satu -->
+    <div class="button">
+      <!-- tombol prev untuk ke gambar sebelumnya -->
+      <button id="prev">&#10094;</button>
+      <!-- tombol next untuk ke gambar selanjutnya -->
+      <button id="next">&#10095;</button>
+      <!-- container utamanya carousel -->
+      <div class="carousel">
+        <!-- container semua gambarnya, dimasukin satu div biar bisa digeser bersamaan -->
+        <div class="slides">
+          <img src="quotes1.png" />
+          <img src="quotes2.png" />
+          <img src="quotes3.png" />
+          <img src="quotes4.png" />
+          <!-- clone, buat kalo ngebuat infinity loop tuh jadi lebih smooth -->
+          <img src="quotes1.png" />
+        </div>
+      </div>
+    </div>
+    <!-- library jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- menghubungkan file javascriptnya -->
+    <script src="script.js"></script>
+  </body>
+</html>

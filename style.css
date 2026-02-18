@@ -1,0 +1,62 @@
+/* mengatur tampilan bodynya biar semua elemennya di tengah */
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: #f4f4f4;
+  /* flex dipake biar konten center horizontal & vertical */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/* container utamanya carousel */
+.carousel {
+  position: relative;
+  /* ukuran dibuat kotak karna gambarnya udah 1:1 jadi biar cocok */
+  width: 350px;
+  height: 350px;
+  /* buat nyembunyiin gambar yang di luar daerah */
+  overflow: hidden;
+  /* ngebuat sudutnya melengkung */
+  border-radius: 16px;
+  /* buat ngasih bayangan */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  background: black;
+}
+
+/* container semua slide */
+.slides {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+/* styling setiap gambarnya */
+.slides img {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+/* styling buttonnya */
+button {
+  position: absolute;
+  top: 50%;
+  /* biar tombolnya bisa lebih ketengah tengah */
+  transform: translateY(50%);
+  font-size: 25px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+/* posisi tombol prev sama nextnya */
+#prev {
+  left: 500px;
+}
+#next {
+  right: 500px;
+}
